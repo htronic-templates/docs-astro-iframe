@@ -1,0 +1,23 @@
+---
+// Isolate a html content with an iframe and apply the tailwind css
+import cssInline from '../styles/neon-ui-css/root.css?inline';
+const slotHtml = await Astro.slots.render('default');
+
+const srcdoc = `
+<!doctype html>
+<html>
+  <head>
+    <style>
+      :root { background-color: #17181c; }
+    </style>
+    <style>${cssInline}</style>
+  </head>
+  <body>${slotHtml}</body>
+</html>
+`;
+---
+
+<iframe
+  style="height:100%; width:100%; border:0;"
+  srcdoc={srcdoc}
+></iframe>

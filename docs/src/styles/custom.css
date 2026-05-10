@@ -1,0 +1,17 @@
+@layer starlight, terminal, my-overrides;
+
+@layer my-overrides {
+  :root, ::backdrop {
+      color-scheme: dark;
+	  --sl-color-accent-high: #7547d1;
+	  --terminal-title-gradient: linear-gradient(135deg, #9470db, var(--sl-color-accent-high));
+  }
+
+  h1 {
+    background: var(--sl-color-white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+  }
+}

@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@layer components {
+  .test-btn-primary {
+    @apply px-4 py-2 rounded-full bg-black text-white hover:opacity-80 bg-red-500;
+  }
+}
