@@ -10,7 +10,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://hecatron-templates.github.io/docs-astro-template/',
+  site: 'https://htronic-templates.github.io/docs-astro-template/',
   base: '/docs-astro-template',
 
   integrations: [
@@ -20,7 +20,7 @@ export default defineConfig({
         // Relative path to your custom CSS file
         './src/styles/custom.css',
       ],
-      social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/Hecatron-Templates/docs-astro-template' }],
+      social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/htronic-templates/docs-astro-template' }],
       plugins: [
     starlightThemeTerminal(),
         starlightSidebarTopics([
