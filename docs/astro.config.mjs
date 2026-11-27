@@ -10,8 +10,8 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://htronic-templates.github.io/docs-astro-iframe/',
-  base: '/docs-astro-iframe',
+  site: 'https://htronic-templates.github.io/docs-tpl-astro-iframe/',
+  base: '/docs-tpl-astro-iframe',
 
   integrations: [
     starlight({
@@ -20,7 +20,7 @@ export default defineConfig({
         // Relative path to your custom CSS file
         './src/styles/custom.css',
       ],
-      social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/htronic-templates/docs-astro-iframe' }],
+      social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/htronic-templates/docs-tpl-astro-iframe' }],
       plugins: [
     starlightThemeTerminal(),
         starlightSidebarTopics([
